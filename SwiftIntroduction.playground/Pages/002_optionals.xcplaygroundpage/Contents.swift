@@ -1,6 +1,7 @@
 /*: 
-### Optionals - ujarzmianie nulli
-* Wartość `nil` może ona być użyta tylko w określnych warunkach
+# Optionals 
+## czyli ujarzmianie nulli
+* Wartość `nil` może ona być użyta tylko w określonych warunkach
 * Oznaczamy dodając `?` do typu
 */
 

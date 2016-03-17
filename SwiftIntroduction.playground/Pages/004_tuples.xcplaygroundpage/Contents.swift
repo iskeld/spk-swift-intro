@@ -1,4 +1,4 @@
-//: # Tuples
+//: # Tuples - krotki 🌼
 
 //: Najprostsza postać
 let krotka = (42, "answer")

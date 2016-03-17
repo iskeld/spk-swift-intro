@@ -6,5 +6,6 @@
         <page name='003_types'/>
         <page name='004_tuples'/>
         <page name='005_enums'/>
+        <page name='006_pattern_matching'/>
     </pages>
 </playground>
