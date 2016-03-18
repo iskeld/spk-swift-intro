@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='osx' display-mode='raw'>
     <pages>
+        <page name='intro'/>
         <page name='declarations'/>
         <page name='optionals'/>
         <page name='types'/>
@@ -10,5 +11,7 @@
         <page name='structs_classes'/>
         <page name='protocols'/>
         <page name='extensions'/>
+        <page name='functions'/>
+        <page name='summary'/>
     </pages>
 </playground>
