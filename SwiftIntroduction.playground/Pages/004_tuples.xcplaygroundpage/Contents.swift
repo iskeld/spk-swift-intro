@@ -8,7 +8,9 @@ krotka.1
 //: Zwracanie parametrów z funkcji
 import Foundation
 func makeRequest(url: String) -> (statusCode: Int, contents: String) {
-    return arc4random() % 2 == 0 ? (400, "not found") : (statusCode: 200, contents: "Here is your kitten 🐱")
+    return arc4random() % 2 == 0
+        ? (400, "not found")
+        : (statusCode: 200, contents: "Here is your kitten 🐱")
 }
 
 //: bezpośrednie przypisanie elementów według kolejności

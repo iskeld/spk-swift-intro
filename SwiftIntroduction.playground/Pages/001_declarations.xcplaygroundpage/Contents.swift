@@ -1,5 +1,5 @@
 /*: 
-#### Deklaracje
+# Deklaracje
 * Funkcje
 * Stałe
 * Zmienne

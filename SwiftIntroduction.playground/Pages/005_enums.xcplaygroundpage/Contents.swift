@@ -1,4 +1,4 @@
-//: # Enumerations - enumeracje
+//: # Enumerations
 
 enum CompassPoint {
     case North
@@ -15,6 +15,11 @@ enum Animal: Character {
     case Cat = "🐱"
     case Dog = "🐶"
     case Bird = "🐦"
+    
+//: enumeracje mogą mieć funkcje i właściwości
+    func printMe() {
+        print(self.rawValue)
+    }
 }
 
 let helloKitty = "Hello \(Animal.Cat.rawValue)"
