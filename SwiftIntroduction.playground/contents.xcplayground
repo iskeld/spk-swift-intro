@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='osx' display-mode='raw'>
     <pages>
-        <page name='001_declarations'/>
-        <page name='002_optionals'/>
-        <page name='003_types'/>
-        <page name='004_tuples'/>
-        <page name='005_enums'/>
-        <page name='006_pattern_matching'/>
-        <page name='007_structs_classes'/>
-        <page name='008_protocols'/>
-        <page name='009_extensions'/>
+        <page name='declarations'/>
+        <page name='optionals'/>
+        <page name='types'/>
+        <page name='tuples'/>
+        <page name='enums'/>
+        <page name='pattern_matching'/>
+        <page name='structs_classes'/>
+        <page name='protocols'/>
+        <page name='extensions'/>
     </pages>
 </playground>

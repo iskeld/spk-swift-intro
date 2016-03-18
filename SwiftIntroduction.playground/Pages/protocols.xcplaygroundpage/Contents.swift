@@ -29,7 +29,7 @@ class Person : JsonSerializable {
     var prettyPrint: Bool
     
     func toJson() -> String {
-        return " { \"name\": \(name), \"age\": \(age) "
+        return " { 'name': '\(name)', 'age': \(age) }"
     }
     
     required init (json: String) {
