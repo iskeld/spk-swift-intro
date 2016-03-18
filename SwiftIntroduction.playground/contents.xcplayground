@@ -8,5 +8,6 @@
         <page name='005_enums'/>
         <page name='006_pattern_matching'/>
         <page name='007_structs_classes'/>
+        <page name='008_protocols_extensions'/>
     </pages>
 </playground>

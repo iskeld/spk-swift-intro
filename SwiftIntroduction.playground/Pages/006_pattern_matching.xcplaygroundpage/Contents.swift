@@ -1,4 +1,4 @@
-//: # Pattern matching
+//: # Switch oraz pattern matching
 
 //: dla enum
 import Foundation
