@@ -1,10 +1,11 @@
 /*: 
 # Structs & Classes
+---
 * struktury - typy wartościowe (value types)
 * klasy - typy referencyjne (reference types)
+---
+## Struktury
 */
-
-//: ## Struktury
 struct Resolution {
     //: stored properties
     let width: Int
@@ -20,7 +21,10 @@ struct Resolution {
 //let res:Resolution = Resolution(width: 1920, height: 1280)
 //res.display
 
-//: ## Klasy
+/*:
+---
+## Klasy
+*/
 class Display {
     let nativeResolution: Resolution
     private (set) var currentResolution: Resolution
@@ -80,3 +84,7 @@ class Display4k : Display {
 //display4k.changeResolution(newResolution: Resolution(width: 1024, height: 768))
 //display4k.currentResolution.display
 //display4k.refreshRateHz
+/*:
+ ---
+ [⬅️⬅️](@previous) [➡️➡️](@next)
+ */

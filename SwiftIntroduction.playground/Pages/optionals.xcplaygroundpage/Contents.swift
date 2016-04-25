@@ -1,10 +1,10 @@
 /*: 
 # Optionals 
-## czyli ujarzmianie nulli
+_(... czyli jak radzić sobie z nullami)_
+---
 * Wartość `nil` może ona być użyta tylko w określonych warunkach
 * Oznaczamy dodając `?` do typu
 */
-
 func greet(name: String) -> String? {
     if name == "" {
         return nil
@@ -12,22 +12,18 @@ func greet(name: String) -> String? {
     return "Hello, \(name)!"
 }
 
-func changeCaseAndWrap(value: String) -> String {
-    let uppercase = value.uppercaseString
-    return "__\(uppercase)__"
-}
-
 let daveGreeting: String? = greet("Dave") // :String? nie jest wymagane
 let nilGreeting = greet("")
 
-//: nie zadziała ☹️
-// printUppercase(daveGreeing)
+//: próba użycia
+func changeCaseAndWrap(value: String) -> String {
+    return "__\(value.uppercaseString)__"
+}
 
+//changeCaseAndWrap(daveGreeting)
 //: **opcja 1**: _"forced unwrapping"_ 😤 poprzez dodanie "`!`"
 //changeCaseAndWrap(daveGreeting!)
-//: _prepare for unforeseen consequences_
 //changeCaseAndWrap(nilGreeting!)
-
 //: **opcja 2**: klauzula `if let` - bezpieczniejsza
 if let greeting = daveGreeting {
     changeCaseAndWrap(greeting)
@@ -55,8 +51,9 @@ changeCaseAndWrap_v2(nilGreeting)
 
 
 /*: 
+ ---
 #### Operatory przydatne do obsługi `nil`
-* `.?` optional chaining
+* `?.` optional chaining
 * `??` nil coalescing
 */
 
@@ -64,18 +61,9 @@ func changeCaseAndWrap_v3(value: String?) -> String {
     return value?.uppercaseString ??  "NILA DOSTAŁEM 🙈!"
 }
 
-changeCaseAndWrap_v2(daveGreeting)
-changeCaseAndWrap_v2(nilGreeting)
-
-func makeHttpRequest(url: String) -> (statusCode:Int, result:String) {
-    return (400, "bad")
-}
-
-class Macz {
-    func doJob(a: Int) -> Int {
-        return a * a
-    }
-}
-
-let fap = Macz.doJob
-fap(Macz())(4)
+changeCaseAndWrap_v3(daveGreeting)
+changeCaseAndWrap_v3(nilGreeting)
+/*:
+---
+[⬅️⬅️](@previous) [➡️➡️](@next)
+*/

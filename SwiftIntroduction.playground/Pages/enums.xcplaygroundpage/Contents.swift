@@ -1,5 +1,7 @@
-//: # Enumerations
-
+/*:
+# Enumerations
+---
+*/
 enum CompassPoint {
     case North
     case South
@@ -22,7 +24,7 @@ enum Animal: Character {
     }
 }
 
-let helloKitty = "Hello \(Animal.Cat.rawValue)"
+//let helloKitty = "Hello \(Animal.Cat.rawValue)"
 
 //: enumeracja z powiązanymi wartościami
 enum Shape {
@@ -31,3 +33,7 @@ enum Shape {
 }
 
 let rectangle = Shape.Rectangle(width: 10, height: 5)
+/*:
+---
+[⬅️⬅️](@previous) [➡️➡️](@next)
+*/

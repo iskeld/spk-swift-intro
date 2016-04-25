@@ -1,6 +1,8 @@
-//: # Switch oraz pattern matching
-
-//: dla enum
+/*:
+# Pattern matching
+---
+przykład dla enum
+*/
 import Foundation
 enum Shape {
     case Rectangle (width: Double, height: Double)
@@ -47,3 +49,7 @@ func validateRequest(result: httpResult) -> String {
 
 validateRequest(http404)
 validateRequest(http200)
+/*:
+---
+[⬅️⬅️](@previous) [➡️➡️](@next)
+*/

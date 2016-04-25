@@ -1,21 +1,21 @@
 /*: 
 # Protocols
-Protokoły - mocarny odpowiednik interface'ów 😎
+---
 */
 
 protocol JsonSerializable {
     var prettyPrint: Bool { get set }
-
+    
     func toJson() -> String
     
-//: Protokoły pozwalają na określenie konstruktorów
+    // konstruktor
     init(json: String)
     
-//: Jak również statyczne metody (lub właściwości)
+    // metoda statyczna
     static func isValidJson(json: String) -> Bool
 }
 
-//: ## Adoptowanie protokołu "adopting a protocol"
+//: ## Adoptowanie protokołu
 class Person : JsonSerializable {
     let name: String
     let age: Int
@@ -60,3 +60,7 @@ protocol XmlSerializable {
 func serialize(item: protocol<JsonSerializable, XmlSerializable>, toJson: Bool) -> String {
     return toJson ? item.toJson() : item.toXml()
 }
+/*:
+---
+[⬅️⬅️](@previous) [➡️➡️](@next)
+*/

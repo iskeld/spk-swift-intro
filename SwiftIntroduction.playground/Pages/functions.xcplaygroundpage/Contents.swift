@@ -1,9 +1,9 @@
 /*:
-# Functions & Functional techniques
+# Functions
+_(... & functional techniques)_
+---
 */
-
 let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-
 //: Kilka sposobów zapisu lambd
 //let even01 = array.filter({ (element: Int) -> Bool in return element % 2 == 0 })
 //let even02 = array.filter({ element in return element % 2 == 0 })
@@ -13,16 +13,21 @@ let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 //even02
 //even03
 //even04
-
 //: Gdy Lambda jest ostatnim parametrem, możemy pominąć nawiasy
-//let even05 = array.filter{ $0 % 2 == 0 }
+//let even05 = array.filter { $0 % 2 == 0 }
 //even05
 
-//: # Method chaining i przekazywanie operatorów jako funkcji
+/*:
+---
+**Method chaining**
+*/
 //let evenSum = array.filter{ $0 % 2 == 0}.reduce(0, combine: +)
 //evenSum
 
-//: # Currying
+/*:
+---
+Currying
+*/
 //enum Wrapper { case Json, XML }
 //
 //func wrapIn(type: Wrapper) -> (String) -> String {
@@ -37,3 +42,12 @@ let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 //let wrapInXml = wrapIn(Wrapper.XML)
 //wrapInXml("TEST")
+
+class Macz {
+    func doJob(a: Int) -> Int {
+        return a * a
+    }
+}
+
+let foo = Macz.doJob
+foo(Macz())(4)

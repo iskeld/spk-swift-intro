@@ -1,5 +1,6 @@
 /*:
-* # Extensions
+# Extensions
+---
 Dzięki nim możemy rozszerzać istniejące typy o nowe:
 * wyliczone właściwości (computed properties) (+ statyczne)
 * metody (+ statyczne)
@@ -9,9 +10,9 @@ Dzięki nim możemy rozszerzać istniejące typy o nowe:
 Możemy również: 
 * adopotwać protokoły dla istniejących typów
 * rozszerzać protokoły dostaraczając domyślnej imlementacji
+---
+**Rozszerzenie typu wbudowanego (generycznego) o nową metodę:**
 */
-
-//: # Rozszerzenie typu wbudowanego (generycznego) o nową metodę
 extension Array {
     func firstTwo() -> (Element?, Element?) {
         switch count {
@@ -22,8 +23,7 @@ extension Array {
     }
 }
 // ["du", "hast", "mich"].firstTwo()
-
-//: # Rozszerzenie typu o nowy konstruktor
+//: **Rozszerzenie typu o nowy konstruktor**
 import Foundation
 
 struct Point { let x: Int, y: Int }
@@ -35,13 +35,10 @@ extension Point {
         y = Int(segments[1])!
     }
 }
-
 //let point = Point(string: "800,42")
 //point.x
 //point.y
-
-//: # Adpotowanie protokołu za pomocą rozszerzeń
-
+//: **Adpotowanie protokołu za pomocą rozszerzeń**
 protocol JsonSerializable {
     func toJson() -> String
 }
@@ -57,8 +54,7 @@ func serialize(item: JsonSerializable) {
 }
 
 //serialize(Point(string: "8,13"))
-
-//: # Rozszerzenie protokołu o nową metodę z domyślną implementacją
+//: **Rozszerzenie protokołu o nową metodę z domyślną implementacją**
 extension JsonSerializable {
     func toBson() -> [Int] {
         return [0, 0]
@@ -81,3 +77,7 @@ struct User : JsonSerializable {
 //let user01 = User(name: "Isaac Clarke")
 //point01.toBson()
 //user01.toBson()
+/*:
+ ---
+ [⬅️⬅️](@previous) [➡️➡️](@next)
+ */
