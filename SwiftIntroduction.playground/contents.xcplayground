@@ -3,6 +3,7 @@
     <pages>
         <page name='intro'/>
         <page name='history'/>
+        <page name='usages'/>
         <page name='declarations'/>
         <page name='optionals'/>
         <page name='types'/>
@@ -13,6 +14,7 @@
         <page name='protocols'/>
         <page name='extensions'/>
         <page name='functions'/>
-        <page name='summary'/>
+        <page name='cons'/>
+        <page name='links'/>
     </pages>
 </playground>
