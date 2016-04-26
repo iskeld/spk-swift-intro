@@ -1,5 +1,5 @@
 /*:
- # Links
+ # Linki
  ---
  * https://swift.org
  * https://developer.apple.com/swift/

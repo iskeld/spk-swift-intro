@@ -1,5 +1,5 @@
 /*:
- # About
+ # O mnie
  ---
  
  **Maciek Woźniak**

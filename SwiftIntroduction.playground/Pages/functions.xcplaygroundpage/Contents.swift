@@ -42,12 +42,19 @@ Currying
 
 //let wrapInXml = wrapIn(Wrapper.XML)
 //wrapInXml("TEST")
-
-class Macz {
-    func doJob(a: Int) -> Int {
+/*:
+ ---
+ Metody klas jako obiekty
+ */
+class Foobar {
+    func square(a: Int) -> Int {
         return a * a
     }
 }
 
-let foo = Macz.doJob
-foo(Macz())(4)
+let square_detached = Foobar.square
+square_detached(Foobar())(4)
+/*:
+ ---
+ [⬅️⬅️](@previous) [➡️➡️](@next)
+ */
