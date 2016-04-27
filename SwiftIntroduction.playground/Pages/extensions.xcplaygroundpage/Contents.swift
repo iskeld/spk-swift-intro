@@ -22,7 +22,7 @@ extension Array {
         }
     }
 }
-// ["du", "hast", "mich"].firstTwo()
+["du", "hast", "mich"].firstTwo()
 //: **Rozszerzenie typu o nowy konstruktor**
 import Foundation
 
@@ -35,9 +35,9 @@ extension Point {
         y = Int(segments[1])!
     }
 }
-//let point = Point(string: "800,42")
-//point.x
-//point.y
+let point = Point(string: "800,42")
+point.x
+point.y
 //: **Adpotowanie protokołu za pomocą rozszerzeń**
 protocol JsonSerializable {
     func toJson() -> String
@@ -53,7 +53,7 @@ func serialize(item: JsonSerializable) {
     print("Serialized: \(item.toJson())")
 }
 
-//serialize(Point(string: "8,13"))
+serialize(Point(string: "8,13"))
 //: **Rozszerzenie protokołu o nową metodę z domyślną implementacją**
 extension JsonSerializable {
     func toBson() -> [Int] {
@@ -73,10 +73,10 @@ struct User : JsonSerializable {
     }
 }
 
-//let point01 = Point(string: "800,500")
-//let user01 = User(name: "Isaac Clarke")
-//point01.toBson()
-//user01.toBson()
+let point01 = Point(string: "800,500")
+let user01 = User(name: "Isaac Clarke")
+point01.toBson()
+user01.toBson()
 /*:
  ---
  [⬅️⬅️](@previous) [➡️➡️](@next)

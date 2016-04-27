@@ -22,7 +22,7 @@ func changeCaseAndWrap(value: String) -> String {
 
 //changeCaseAndWrap(daveGreeting)
 //: **opcja 1**: _"forced unwrapping"_ 😤 poprzez dodanie "`!`"
-//changeCaseAndWrap(daveGreeting!)
+changeCaseAndWrap(daveGreeting!)
 //changeCaseAndWrap(nilGreeting!)
 //: **opcja 2**: klauzula `if let` - bezpieczniejsza
 if let greeting = daveGreeting {

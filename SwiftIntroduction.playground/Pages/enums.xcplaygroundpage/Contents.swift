@@ -24,7 +24,7 @@ enum Animal: Character {
     }
 }
 
-//let helloKitty = "Hello \(Animal.Cat.rawValue)"
+let helloKitty = "Hello \(Animal.Cat.rawValue)"
 
 //: enumeracja z powiązanymi wartościami
 enum Shape {

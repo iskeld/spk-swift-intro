@@ -18,8 +18,8 @@ struct Resolution {
 }
 
 //: W strukturach dostajemy gratis konstruktor do inicjalizowania wszystkich właściwości
-//let res:Resolution = Resolution(width: 1920, height: 1280)
-//res.display
+let res:Resolution = Resolution(width: 1920, height: 1280)
+res.display
 
 /*:
 ---
@@ -53,8 +53,8 @@ class Display {
     }
 }
 
-//let display = Display(nativeResolution: Resolution(width: 1920, height: 1280))
-//display.enablePictureByPicture(horizontalCount: 3)
+let display = Display(nativeResolution: Resolution(width: 1920, height: 1280))
+display.enablePictureByPicture(horizontalCount: 3)
 
 //: ## Dziedziczenie
 class Display4k : Display {
@@ -78,12 +78,12 @@ class Display4k : Display {
     }
 }
 
-//let display4k = Display4k(supports60Hz: false)
-//display4k.currentResolution.display
-//display4k.refreshRateHz
-//display4k.changeResolution(newResolution: Resolution(width: 1024, height: 768))
-//display4k.currentResolution.display
-//display4k.refreshRateHz
+let display4k = Display4k(supports60Hz: false)
+display4k.currentResolution.display
+display4k.refreshRateHz
+display4k.changeResolution(newResolution: Resolution(width: 1024, height: 768))
+display4k.currentResolution.display
+display4k.refreshRateHz
 /*:
  ---
  [⬅️⬅️](@previous) [➡️➡️](@next)

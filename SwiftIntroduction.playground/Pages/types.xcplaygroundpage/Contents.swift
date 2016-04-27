@@ -4,9 +4,9 @@
 * ## struct
 * ## class
 * ## enum
+* ## func
 * ## protocol
 * ## tuple
-* ## func
 ---
 [⬅️⬅️](@previous) [➡️➡️](@next)
 */

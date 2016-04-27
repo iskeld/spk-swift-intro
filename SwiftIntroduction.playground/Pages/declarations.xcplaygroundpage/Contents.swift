@@ -33,7 +33,7 @@ var emojiDict: [String:String]
        "dog": "🐶"]
 
 emojiDict["bird"] = "🐦"
-
+emojiDict["dog"]
 /*:
 ---
 [⬅️⬅️](@previous) [➡️➡️](@next)
